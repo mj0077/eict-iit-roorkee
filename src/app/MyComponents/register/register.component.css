@@ -1,0 +1,203 @@
+/* register.component.css */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    max-width: 90%;
+    padding: 15px 24px;
+    scale: 90%;
+    position: relative;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .modal-header h2 {
+    margin: 0;
+    color: #113366;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+  }
+  
+  .close-button:hover {
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 16px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .form-group input::placeholder {
+    color: #aaa;
+  }
+  
+  .form-group input.invalid {
+    border-color: #f44336;
+  }
+  
+  .password-input-container {
+    position: relative;
+  }
+  
+  .password-input-container input {
+    padding-right: 40px;
+  }
+  
+  .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #666;
+  }
+  
+  .btn-primary {
+    width: 100%;
+    padding: 12px;
+    background-color: #113366;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 16px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0a2142;
+  }
+  
+  .btn-primary:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .divider {
+    text-align: center;
+    margin: 16px 0;
+    position: relative;
+  }
+  
+  .divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #ddd;
+  }
+  
+  .divider span {
+    background-color: white;
+    padding: 0 10px;
+    position: relative;
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .btn-google, .btn-linkedin {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 12px;
+  }
+  
+  .btn-google img, .btn-linkedin img {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+  }
+  
+  .btn-google:hover, .btn-linkedin:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .btn-linkedin {
+    margin-bottom: 20px;
+  }
+  
+  .login-link {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  
+  .login-link a {
+    color: #113366;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+  
+  .terms-text {
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  .terms-text a {
+    color: #113366;
+    text-decoration: none;
+  }
+  
+  .terms-text a:hover {
+    text-decoration: underline;
+  }

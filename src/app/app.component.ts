@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 // import { RouterOutlet } from '@angular/router';
-import { EictFooterComponent } from './MyComponents/eict-footer/eict-footer.component';
+import { EictHeaderComponent } from "./MyComponents/eict-header/eict-header.component";
 import { LoginComponent } from './MyComponents/login/login.component';
+import { RegisterComponent } from "./MyComponents/register/register.component";
+import { EictFooterComponent } from './MyComponents/eict-footer/eict-footer.component';
 
 @Component({
   selector: 'app-root',
-  imports: [EictFooterComponent, LoginComponent],
+  imports: [EictHeaderComponent, EictFooterComponent, LoginComponent, RegisterComponent],
   // imports: [RouterOutlet, EictFooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
