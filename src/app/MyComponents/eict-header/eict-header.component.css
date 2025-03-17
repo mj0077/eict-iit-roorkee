@@ -14,6 +14,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 80%;
   }
   
   .top-bar .contact-info {
@@ -27,7 +28,7 @@
     display: flex;
     align-items: center;
     gap: 5px;
-    font-size: 14px;
+    font-size: 12px;
   }
   
   .top-bar .contact-link:hover {
@@ -62,6 +63,7 @@
   }
   
   .main-header .container {
+    width: 80%;
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -85,18 +87,18 @@
   
   .main-header .title-section {
     text-align: center;
+    color: #3b82f6;
   }
   
   .main-header .title-section .academy-title {
-    color: #1a389c;
-    font-size: 24px;
-    margin-bottom: 5px;
+    font-size: 22px;
+    margin: 0;
     font-weight: 500;
   }
   
   .main-header .title-section .academy-subtitle {
-    color: #1a389c;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 20px;
     margin: 0;
   }
   
