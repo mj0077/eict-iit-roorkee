@@ -1,0 +1,79 @@
+<!-- register.component.html -->
+<div class="modal-overlay">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h2>Register</h2>
+        <button class="close-button" (click)="closeModal()">×</button>
+      </div>
+      
+      <div class="modal-body">
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input 
+              type="text" 
+              id="name" 
+              formControlName="name" 
+              placeholder="Enter your full name"
+              [ngClass]="{'invalid': registerForm.get('name')?.invalid && registerForm.get('name')?.touched}"
+            >
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input 
+              type="email" 
+              id="email" 
+              formControlName="email" 
+              placeholder="abc@example.com"
+              [ngClass]="{'invalid': registerForm.get('email')?.invalid && registerForm.get('email')?.touched}"
+            >
+          </div>
+          
+          <div class="form-group">
+            <label for="password">Password</label>
+            <div class="password-input-container">
+              <input 
+                [type]="showPassword ? 'text' : 'password'"
+                id="password" 
+                formControlName="password"
+                placeholder="••••••••"
+                [ngClass]="{'invalid': registerForm.get('password')?.invalid && registerForm.get('password')?.touched}"
+              >
+              <button type="button" class="toggle-password" (click)="togglePasswordVisibility()">
+                <i class="fa" [ngClass]="showPassword ? 'fa-eye-slash' : 'fa-eye'"></i>
+              </button>
+            </div>
+          </div>
+          
+          <button type="submit" class="btn-primary" [disabled]="registerForm.invalid">
+            Join for Free
+          </button>
+          
+          <div class="divider">
+            <span>OR</span>
+          </div>
+          
+          <button type="button" class="btn-google" (click)="continueWithGoogle()">
+            <img src="assets/google-icon.svg" alt="Google">
+            Continue with Google
+          </button>
+          
+          <button type="button" class="btn-linkedin" (click)="continueWithLinkedIn()">
+            <img src="assets/linkedin-icon.svg" alt="LinkedIn">
+            Continue with LinkedIn
+          </button>
+          
+          <div class="login-link">
+            Already have account? <a href="javascript:void(0)" routerLink="/login">Log in</a>
+          </div>
+          
+          <div class="terms-text">
+            Having trouble logging in? <a href="javascript:void(0)">Contact help center</a><br>
+            This site is protected by reCAPTCHA Enterprise and the Google 
+            <a href="javascript:void(0)">Privacy Policy</a> and <a href="javascript:void(0)">Terms of Service</a> apply.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>

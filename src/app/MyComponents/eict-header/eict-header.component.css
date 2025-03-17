@@ -1,0 +1,206 @@
+/* eict-header.component.css */
+:host {
+    display: block;
+  }
+  
+  /* Top bar styles */
+  .top-bar {
+    background-color: #1a389c;
+    color: white;
+    padding: 8px 0;
+  }
+  
+  .top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .top-bar .contact-info {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .top-bar .contact-link {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+  }
+  
+  .top-bar .contact-link:hover {
+    text-decoration: underline;
+  }
+  
+  .top-bar .social-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .top-bar .social-icon {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s;
+  }
+  
+  .top-bar .social-icon:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  
+  /* Main header styles */
+  .main-header {
+    background-color: white;
+    padding: 15px 0;
+  }
+  
+  .main-header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .main-header .logo-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .main-header .logos {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .main-header .logos .logo {
+    height: 60px;
+    width: auto;
+  }
+  
+  .main-header .title-section {
+    text-align: center;
+  }
+  
+  .main-header .title-section .academy-title {
+    color: #1a389c;
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  
+  .main-header .title-section .academy-subtitle {
+    color: #1a389c;
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  /* Navigation styles */
+  .main-nav {
+    background-color: white;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0;
+  }
+  
+  .main-nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .main-nav .nav-items {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+  }
+  
+  .main-nav .nav-item {
+    position: relative;
+  }
+  
+  .main-nav .nav-link {
+    color: #333;
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s;
+  }
+  
+  .main-nav .nav-link:hover, 
+  .main-nav .nav-link.active {
+    color: #1a389c;
+  }
+  
+  .main-nav .auth-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .main-nav .auth-buttons .btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .main-nav .auth-buttons .btn-light {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ddd;
+  }
+  
+  .main-nav .auth-buttons .btn-primary {
+    background-color: #1a389c;
+    color: white;
+    border: 1px solid #1a389c;
+  }
+  
+  .main-nav .auth-buttons .btn-success {
+    background-color: #28a745;
+    color: white;
+    border: 1px solid #28a745;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 992px) {
+    .main-header .logo-section {
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    .main-nav .container {
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    .main-nav .auth-buttons {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .main-header .logos {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .main-nav .nav-items {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
