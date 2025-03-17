@@ -1,77 +1,77 @@
 <!-- eict-header.component.html -->
 <header>
-    <!-- Top bar with contact info and social links -->
-    <div class="top-bar">
-      <div class="container">
-        <div class="contact-info">
-          <a href="tel:{{ phoneNumber }}" class="contact-link">
-            <i class="bi bi-telephone-fill"></i> {{ phoneNumber }}
+  <!-- Top bar with contact info and social links -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="contact-info">
+        <a href="tel:{{ phoneNumber }}" class="contact-link">
+          <i class="fas fa-phone-alt"></i> {{ phoneNumber }}
+        </a>
+        <a href="mailto:{{ email }}" class="contact-link">
+          <i class="fas fa-envelope"></i> {{ email }}
+        </a>
+      </div>
+      <div class="social-links">
+        @for (link of socialLinks; track link) {
+          <a href="{{ link.url }}" class="social-icon" target="_blank">
+            <i class="fab fa-{{ link.icon }}"></i>
           </a>
-          <a href="mailto:{{ email }}" class="contact-link">
-            <i class="bi bi-envelope-fill"></i> {{ email }}
-          </a>
-        </div>
-        <div class="social-links">
-          @for (link of socialLinks; track link) {
-            <a href="{{ link.url }}" class="social-icon" target="_blank">
-              <i class="bi bi-{{ link.icon }}"></i>
-            </a>
-          }
-        </div>
+        }
       </div>
     </div>
-  
-    <!-- Main header with logos and navigation -->
-    <div class="main-header">
-      <div class="container">
-        <div class="logo-section">
-          <!-- Left logos -->
-          <div class="logos left-logos">
-            <img src="assets/images/iit-iitr-logo.png" alt="IIT Roorkee Logo" class="logo">
-            <img src="assets/images/eict-logo.png" alt="EICT Logo" class="logo">
-            <img src="assets/images/meity-logo.png" alt="MeitY Logo" class="logo">
-          </div>
-          
-          <!-- Center title -->
-          <div class="title-section">
-            <h1 class="academy-title">E&ICT Academy IIT Roorkee</h1>
-            <p class="academy-subtitle">A joint Initiative by MeitY & IIT Roorkee</p>
-          </div>
-          
-          <!-- Right logos -->
-          <div class="logos right-logos">
-            <img src="assets/images/electronics-india-logo.png" alt="Electronics India Logo" class="logo">
-            <img src="assets/images/digital-india-logo.png" alt="Digital India Logo" class="logo">
-          </div>
+  </div>
+
+  <!-- Main header with logos and navigation -->
+  <div class="main-header">
+    <div class="container">
+      <div class="logo-section">
+        <!-- Left logos -->
+        <div class="logos left-logos">
+          <img src="assets/images/iitr-logo.png" alt="IIT Roorkee Logo" class="logo">
+          <img src="assets/images/eict-logo.png" alt="EICT Logo" class="logo">
+          <img src="assets/images/meity-logo.png" alt="MeitY Logo" class="logo">
         </div>
-      </div>
-    </div>
-  
-    <!-- Navigation bar -->
-    <nav class="main-nav">
-      <div class="container">
-        <ul class="nav-items">
-          @for (item of navItems; track item) {
-            <li class="nav-item">
-              <a 
-                [routerLink]="item.route" 
-                [routerLinkActive]="'active'"
-                class="nav-link"
-              >
-                {{ item.label }}
-                @if (item.hasDropdown) {
-                  <i class="bi bi-chevron-down"></i>
-                }
-              </a>
-            </li>
-          }
-        </ul>
         
-        <div class="auth-buttons">
-          <a class="btn btn-light" routerLink="/register">Register</a>
-          <a class="btn btn-primary" routerLink="/login">Log In</a>
-          <a class="btn btn-success" routerLink="/verify">Verify Certificate</a>
+        <!-- Center title -->
+        <div class="title-section">
+          <h1 class="academy-title">E&ICT Academy IIT Roorkee</h1>
+          <p class="academy-subtitle">A joint Initiative by MeitY & IIT Roorkee</p>
+        </div>
+        
+        <!-- Right logos -->
+        <div class="logos right-logos">
+          <img src="assets/images/electronics-india-logo.png" alt="Electronics India Logo" class="logo">
+          <img src="assets/images/digital-india-logo.png" alt="Digital India Logo" class="logo">
         </div>
       </div>
-    </nav>
-  </header>
+    </div>
+  </div>
+
+  <!-- Navigation bar -->
+  <nav class="main-nav">
+    <div class="container">
+      <ul class="nav-items">
+        @for (item of navItems; track item) {
+          <li class="nav-item">
+            <a 
+              [routerLink]="item.route" 
+              [routerLinkActive]="'active'"
+              class="nav-link"
+            >
+              {{ item.label }}
+              @if (item.hasDropdown) {
+                <i class="fas fa-chevron-down"></i>
+              }
+            </a>
+          </li>
+        }
+      </ul>
+      
+      <div class="auth-buttons">
+        <a class="btn btn-light" routerLink="/register">Register</a>
+        <a class="btn btn-primary" routerLink="/login">Log In</a>
+        <a class="btn btn-success" routerLink="/verify">Verify Certificate</a>
+      </div>
+    </div>
+  </nav>
+</header>
