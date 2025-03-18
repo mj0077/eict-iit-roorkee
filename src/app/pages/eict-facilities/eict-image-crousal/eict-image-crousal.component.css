@@ -1,0 +1,64 @@
+.carousel {
+  width: 100%;
+  max-width: 722.85px;
+  margin: auto;
+  position: relative; /* Ensures positioning context */
+}
+
+.carousel-inner {
+  position: relative; /* Allows z-index to work properly */
+  z-index: 2; /* Ensures images are above */
+}
+
+.carousel-img {
+  border-radius: 15px;
+  object-fit: cover;
+  height: 400px;
+  position: relative;
+  z-index: 3; /* Ensure image stays above */
+}
+
+.frame {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 21px solid;
+  z-index: 1; /* Keeps frame below the image */
+}
+
+.top-left {
+  border-color: #2f327d;
+  top: -15px;
+  left: -15px;
+  border-top-left-radius: 17.45px;
+}
+
+.bottom-right {
+  border-color: #48ac70;
+  bottom: -15px;
+  right: -15px;
+  border-bottom-right-radius: 17.45px;
+}
+
+.carousel-indicators button {
+  background-color: #2f3b90;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.carousel-indicators .active {
+  background-color: #48ac70;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+.carousel-control-next {
+  z-index: 8;
+}
+.carousel-indicators {
+  z-index: 8;
+}
