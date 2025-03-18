@@ -12,14 +12,13 @@
   }
   
   .modal-content {
-    background-color: white;
+    background: white;
+    padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     width: 100%;
-    max-width: 400px;
-    padding: 20px;
-    /* margin-top: 10%; */
+    max-width: 500px;
     position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-family: Arial, sans-serif;
     scale: 90%;
   }
@@ -39,11 +38,18 @@
   }
   
   .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
     background: none;
     border: none;
-    font-size: 24px;
+    font-size: 1.5rem;
     cursor: pointer;
     color: #666;
+  }
+  
+  .close-btn:hover {
+    color: #000;
   }
   
   .form-group {
