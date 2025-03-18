@@ -1,10 +1,11 @@
 import { Routes } from "@angular/router";
-import { FacilitiesComponent } from "./pages/facilities/facilities.component";
-import { HomePageComponent } from "./pages/home-page/home-page.component";
+import { EictAboutUsComponent } from "./pages/eict-about-us/eict-about-us.component";
+import { EictFacilitiesComponent } from "./pages/eict-facilities/eict-facilities.component";
+import { EictHomePageComponent } from "./pages/eict-home-page/eict-home-page.component";
 
 export const routes: Routes = [
-  { path: "", component: HomePageComponent },
-  { path: "home", component: HomePageComponent },
-
-  { path: "facilities", component: FacilitiesComponent },
+  { path: "", component: EictHomePageComponent },
+  { path: "home", component: EictHomePageComponent },
+  { path: "facilities", component: EictFacilitiesComponent },
+  { path: "about-us", component: EictAboutUsComponent },
 ];
