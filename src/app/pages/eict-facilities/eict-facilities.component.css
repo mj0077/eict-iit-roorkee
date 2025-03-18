@@ -1,5 +1,5 @@
 /* Outer container with border */
-.container {
+.lab-container {
   width: 100%;
   max-width: 1440px;
   border: 2px solid #48ac70;
@@ -89,10 +89,117 @@
   transition: 0.3s;
 }
 
+.sectionClassRoom-container {
+  display: flex;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  width: 100%;
+  max-width: 1440px;
+  margin: 60px auto;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 20px;
+  gap: 20px; /* Provides spacing */
+}
+
+.leftSection,
+.rightSection {
+  flex: 1;
+  min-width: 300px; /* Prevents sections from shrinking too much */
+}
+
+.leftSection {
+  max-width: 634px;
+}
+
+.leftSection h1 {
+  font-size: 28px;
+  text-align: center; /* Centers heading */
+}
+
+.classContent {
+  padding-top: 20px;
+  max-width: 634px;
+}
+
+.classContent p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: justify;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns on larger screens */
+  gap: 20px;
+  max-width: 700px;
+  margin: auto;
+  padding-top: 34px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.icon2 {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #f8f9fa;
+  margin-right: 10px;
+}
+
+.icon2 img {
+  width: 60px;
+  height: 60px;
+}
+
+.text2 {
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+}
+
 /* Responsive design: Adjust for smaller screens */
 @media (max-width: 1024px) {
   .lab-list {
     grid-template-columns: repeat(3, 1fr); /* 3 columns for tablets */
+  }
+  .sectionClassRoom-container {
+    flex-direction: column; /* Stack on smaller screens */
+    text-align: center;
+  }
+
+  .leftSection,
+  .rightSection {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .items {
+    grid-template-columns: 1fr; /* One column on smaller screens */
+  }
+
+  .icon2 {
+    width: 35px;
+    height: 35px;
+  }
+
+  .icon2 img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .text2 {
+    font-size: 12px;
   }
 }
 

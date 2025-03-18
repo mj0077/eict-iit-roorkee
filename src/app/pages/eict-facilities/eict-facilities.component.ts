@@ -1,9 +1,10 @@
 import { Component } from "@angular/core";
 import { PageHeadingComponent } from "../page-heading/page-heading.component";
+import { EictImageCrousalComponent } from "./eict-image-crousal/eict-image-crousal.component";
 
 @Component({
   selector: "app-eict-facilities",
-  imports: [PageHeadingComponent],
+  imports: [PageHeadingComponent, EictImageCrousalComponent],
   templateUrl: "./eict-facilities.component.html",
   styleUrl: "./eict-facilities.component.css",
 })
@@ -25,5 +26,10 @@ export class EictFacilitiesComponent {
     { icon: "🔒", name: "Network Security Lab" },
     { icon: "🔒", name: "Computers Lab 1" },
     { icon: "🔒", name: "Computers Lab 2" },
+  ];
+  carouselImages: string[] = [
+    "/assets/icons/test1.jpg",
+    "/assets/icons/img1.png",
+    "/assets/icons/test1.jpg",
   ];
 }

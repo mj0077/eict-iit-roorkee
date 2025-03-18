@@ -6,14 +6,85 @@
 </div>
 
 <div class="container">
-  <div class="inner-box">
-    <div class="lab-list">
-      @for (lab of labs; track $index) {
-      <div class="lab">
-        <div class="icon">{{ lab.icon }}</div>
-        <span class="text">{{ lab.name }}</span>
+  <div class="lab-container">
+    <div class="inner-box">
+      <div class="lab-list">
+        @for (lab of labs; track $index) {
+        <div class="lab">
+          <div class="icon">{{ lab.icon }}</div>
+          <span class="text">{{ lab.name }}</span>
+        </div>
+        }
       </div>
-      }
+    </div>
+  </div>
+
+  <div class="sectionClassRoom-container">
+    <div class="leftSection">
+      <div class="smartClass">
+        <h1><span class="underline">E&ICT,</span> Smart Classroom</h1>
+        <div class="classContent">
+          <p>
+            E&ICT Smart Classroom is equipped with latest computers, hardware
+            for audio/video conferencing, live streaming, webcasting with
+            recording. All computer systems are installed with softwares such as
+            Matlab R2016b, Cadence Design Tool, Vivado Design Suite- HLx
+            Editions 2017.1, Kein uvision5, Sentaurus TCAD (SDE, Workbench).
+          </p>
+        </div>
+        <div class="items">
+          <div class="item">
+            <div class="icon2">
+              <img src="/assets/icons/capacity.png" alt="Seats Icon" />
+            </div>
+            <span class="text2">Capacity - 42 Seater</span>
+          </div>
+          <div class="item">
+            <div class="icon2">
+              <img
+                src="/assets/icons/computerInstalled.png"
+                alt="Computer Icon"
+              />
+            </div>
+            <span class="text2">Computer Installed - 42</span>
+          </div>
+          <div class="item">
+            <div class="icon2">
+              <img src="/assets/icons/camera.png" alt="Camera Icon" />
+            </div>
+            <span class="text2">Full HD 1080p PTZ Camera</span>
+          </div>
+          <div class="item">
+            <div class="icon2">
+              <img src="/assets/icons/mic.png" alt="Microphone Icon" />
+            </div>
+            <span class="text2"
+              >Digital Podium with 22” Interactive panel Projector</span
+            >
+          </div>
+          <div class="item">
+            <div class="icon2">
+              <img src="/assets/icons/video.png" alt="Video Icon" />
+            </div>
+            <span class="text2"
+              >Video Conferencing, Live Streaming, Webcasting with
+              Recording</span
+            >
+          </div>
+          <div class="item">
+            <div class="icon2">
+              <img src="/assets/icons/screen.png" alt="Screen Icon" />
+            </div>
+            <span class="text2">Motorized Screen</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rightSection">
+      <app-eict-image-crousal
+        [images]="carouselImages"
+      ></app-eict-image-crousal>
+      <!-- <app-eict-image-crousal></app-eict-image-crousal> -->
     </div>
   </div>
 </div>

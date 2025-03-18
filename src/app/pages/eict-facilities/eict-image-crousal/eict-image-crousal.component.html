@@ -1,0 +1,55 @@
+<div
+  id="carouselExampleIndicators"
+  class="carousel slide"
+  data-bs-ride="carousel"
+  data-bs-interval="2000"
+>
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button
+      *ngFor="let img of images; let i = index"
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      [attr.data-bs-slide-to]="i"
+      [class.active]="i === 0"
+    ></button>
+  </div>
+
+  <!-- Frames (Placed Outside) -->
+  <div class="frame top-left"></div>
+
+  <!-- Carousel Images -->
+  <div class="carousel-inner">
+    <div
+      *ngFor="let img of images; let i = index"
+      class="carousel-item"
+      [class.active]="i === 0"
+    >
+      <img
+        [src]="img"
+        class="d-block w-100 carousel-img"
+        alt="carousel image"
+      />
+    </div>
+  </div>
+
+  <div class="frame bottom-right"></div>
+
+  <!-- Controls -->
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#carouselExampleIndicators"
+    data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#carouselExampleIndicators"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </button>
+</div>
