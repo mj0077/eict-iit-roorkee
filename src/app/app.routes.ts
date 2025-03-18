@@ -22,5 +22,8 @@ export const routes: Routes = [
   { path: "facilities", component: FacilitiesComponent },
   // { path: "register", component: RegisterComponent },
   // { path: "login", component: LoginComponent },
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> 2d081f366ec5593bde5a791ed05211b83f31d2a7
 ];
