@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 import { PageHeadingComponent } from "../page-heading/page-heading.component";
-import { HeroComponent } from "../../MyComponents/hero/hero.component";
+import { HeroComponent } from "../hero/hero.component";
 
 @Component({
   selector: "app-eict-home-page",

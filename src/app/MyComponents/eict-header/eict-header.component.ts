@@ -2,7 +2,7 @@
 import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { RouterLink, RouterLinkActive } from "@angular/router";
-import { ModalService } from "../../services/modal.service";
+import { ModalService } from "../../../services/modal.service";
 
 @Component({
   selector: "app-eict-header",

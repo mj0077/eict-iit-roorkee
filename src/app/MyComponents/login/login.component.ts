@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { ModalService } from '../../services/modal.service';
+import { ModalService } from '../../../services/modal.service';
 
 @Component({
   selector: 'app-login',
