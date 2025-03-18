@@ -1,0 +1,109 @@
+/* Outer container with border */
+.container {
+  width: 100%;
+  max-width: 1440px;
+  border: 2px solid #48ac70;
+  border-radius: 20px;
+  margin: 60px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Inner content box */
+.inner-box {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Lab list grid */
+.lab-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Individual lab items */
+.lab {
+  display: flex;
+  align-items: center;
+  background-color: #1e3a78;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 2px solid #6c63ff;
+  box-shadow: 0px 0px 5px #6c63ff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.lab:hover {
+  background-color: #2a4ba3;
+}
+
+/* Icon styling */
+.icon {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+/* Text styling */
+.text {
+  font-weight: bold;
+  font-size: 14px;
+}
+.lab-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 20px; /* Space between items */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Adjust based on your container */
+}
+
+.lab {
+  display: flex;
+  align-items: center;
+  background-color: #1e3a78;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 2px solid #6c63ff;
+  box-shadow: 0px 0px 5px #6c63ff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Responsive design: Adjust for smaller screens */
+@media (max-width: 1024px) {
+  .lab-list {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .lab-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .lab-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

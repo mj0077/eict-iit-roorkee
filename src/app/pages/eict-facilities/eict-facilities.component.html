@@ -1,0 +1,19 @@
+<div class="subcontainer">
+  <app-page-heading
+    [value]="'Facilities'"
+    [backgroundImage]="'assets/images/facilitiesBack.png'"
+  ></app-page-heading>
+</div>
+
+<div class="container">
+  <div class="inner-box">
+    <div class="lab-list">
+      @for (lab of labs; track $index) {
+      <div class="lab">
+        <div class="icon">{{ lab.icon }}</div>
+        <span class="text">{{ lab.name }}</span>
+      </div>
+      }
+    </div>
+  </div>
+</div>

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FacilitiesComponent } from './facilities.component';
+import { EictFacilitiesComponent } from './eict-facilities.component';
 
-describe('FacilitiesComponent', () => {
-  let component: FacilitiesComponent;
-  let fixture: ComponentFixture<FacilitiesComponent>;
+describe('EictFacilitiesComponent', () => {
+  let component: EictFacilitiesComponent;
+  let fixture: ComponentFixture<EictFacilitiesComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FacilitiesComponent]
+      imports: [EictFacilitiesComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(FacilitiesComponent);
+    fixture = TestBed.createComponent(EictFacilitiesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
