@@ -90,116 +90,99 @@
 }
 
 .sectionClassRoom-container {
+  height: 453px;
   display: flex;
-  flex-wrap: wrap; /* Ensures responsiveness */
+
   width: 100%;
   max-width: 1440px;
   margin: 60px auto;
+  display: flex;
   align-items: center;
   justify-content: center;
   background-color: white;
   padding: 20px;
-  gap: 20px; /* Provides spacing */
 }
 
 .leftSection,
 .rightSection {
   flex: 1;
-  min-width: 300px; /* Prevents sections from shrinking too much */
+  height: 100%;
 }
 
 .leftSection {
+  width: 100%;
   max-width: 634px;
+  height: 413px;
 }
-
 .leftSection h1 {
-  font-size: 28px;
-  text-align: center; /* Centers heading */
+  color: #2f327d;
 }
-
+.underline {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #48ac70;
+  text-underline-offset: 15px;
+}
 .classContent {
   padding-top: 20px;
+  width: 100%;
   max-width: 634px;
+  height: 112px;
 }
-
 .classContent p {
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
-  text-align: justify;
+  letter-spacing: 0%;
 }
-
 .items {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two columns on larger screens */
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
   max-width: 700px;
   margin: auto;
+  height: 210.66px;
   padding-top: 34px;
 }
 
 .item {
   display: flex;
   align-items: center;
-  padding: 10px;
-  border-radius: 10px;
   background: #fff;
+  padding: 10px;
+  /* border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
 }
 
 .icon2 {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   background: #f8f9fa;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .icon2 img {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
 }
 
 .text2 {
-  font-size: 14px;
+  font-size: 16px;
   color: #333;
   font-weight: 500;
 }
+
+/* .rightSection {
+} */
 
 /* Responsive design: Adjust for smaller screens */
 @media (max-width: 1024px) {
   .lab-list {
     grid-template-columns: repeat(3, 1fr); /* 3 columns for tablets */
-  }
-  .sectionClassRoom-container {
-    flex-direction: column; /* Stack on smaller screens */
-    text-align: center;
-  }
-
-  .leftSection,
-  .rightSection {
-    width: 100%;
-    max-width: 90%;
-  }
-
-  .items {
-    grid-template-columns: 1fr; /* One column on smaller screens */
-  }
-
-  .icon2 {
-    width: 35px;
-    height: 35px;
-  }
-
-  .icon2 img {
-    width: 50px;
-    height: 50px;
-  }
-
-  .text2 {
-    font-size: 12px;
   }
 }
 
