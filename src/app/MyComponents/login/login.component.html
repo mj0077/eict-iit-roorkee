@@ -1,4 +1,4 @@
-<div class="login-modal">
+<div class="login-modal" *ngIf="modalService.loginModalVisible$ | async">
     <div class="modal-content">
       <div class="modal-header">
         <h2>Log in To Your Account</h2>
@@ -61,7 +61,7 @@
       
       <div class="register-link">
         <span>Don't have account?</span>
-        <a href="#" routerLink="/register">Register Now</a>
+        <a href="#" (click)="openRegisterModal(); $event.preventDefault()">Register Now</a>
       </div>
       
       <div class="footer-text">

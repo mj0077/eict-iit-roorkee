@@ -68,8 +68,8 @@
       </ul>
       
       <div class="auth-buttons">
-        <a class="btn btn-light" routerLink="/register">Register</a>
-        <a class="btn btn-primary" routerLink="/login">Log In</a>
+        <a class="btn btn-light" (click)="openRegisterModal(); $event.preventDefault()">Register</a>
+        <a class="btn btn-primary" (click)="openLoginModal(); $event.preventDefault()">Log In</a>
         <a class="btn btn-success" routerLink="/verify">Verify Certificate</a>
       </div>
     </div>

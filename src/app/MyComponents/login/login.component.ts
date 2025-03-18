@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { ModalService } from '../../services/modal.service';
 
 @Component({
   selector: 'app-login',
@@ -17,6 +18,8 @@ export class LoginComponent {
   };
   
   showPassword = false;
+  
+  constructor(public modalService: ModalService) {}
   
   togglePasswordVisibility() {
     this.showPassword = !this.showPassword;
@@ -39,8 +42,11 @@ export class LoginComponent {
   }
   
   closeModal() {
-    // Close the modal
-    console.log('Modal closed');
-    // Add your close logic here
+    this.modalService.hideLoginModal();
+  }
+
+  openRegisterModal() {
+    this.modalService.hideLoginModal();
+    this.modalService.showRegisterModal();
   }
 }

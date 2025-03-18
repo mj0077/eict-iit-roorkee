@@ -1,9 +1,10 @@
 import { Component } from "@angular/core";
 import { PageHeadingComponent } from "../page-heading/page-heading.component";
+import { HeroComponent } from "../../MyComponents/hero/hero.component";
 
 @Component({
   selector: "app-eict-home-page",
-  imports: [PageHeadingComponent],
+  imports: [PageHeadingComponent, HeroComponent],
   templateUrl: "./eict-home-page.component.html",
   styleUrl: "./eict-home-page.component.css",
 })

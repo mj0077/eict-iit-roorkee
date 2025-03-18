@@ -2,6 +2,7 @@
 import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { RouterLink, RouterLinkActive } from "@angular/router";
+import { ModalService } from "../../services/modal.service";
 
 @Component({
   selector: "app-eict-header",
@@ -13,6 +14,8 @@ import { RouterLink, RouterLinkActive } from "@angular/router";
 export class EictHeaderComponent {
   phoneNumber: string = "+91-1332 286457";
   email: string = "eict@iitr.ac.in";
+
+  constructor(private modalService: ModalService) {}
 
   navItems = [
     { label: "Home", route: "/home", active: true },
@@ -30,4 +33,12 @@ export class EictHeaderComponent {
     { icon: "twitter", url: "#" },
     { icon: "instagram", url: "#" },
   ];
+
+  openLoginModal() {
+    this.modalService.showLoginModal();
+  }
+
+  openRegisterModal() {
+    this.modalService.showRegisterModal();
+  }
 }
