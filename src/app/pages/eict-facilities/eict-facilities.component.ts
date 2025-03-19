@@ -1,10 +1,17 @@
 import { Component } from "@angular/core";
 import { PageHeadingComponent } from "../page-heading/page-heading.component";
 import { EictImageCrousalComponent } from "./eict-image-crousal/eict-image-crousal.component";
+import { EictFacilitiesComputingLabComponent } from "./eict-facilities-computing-lab/eict-facilities-computing-lab.component";
+import { EictComputingImageComponent } from "./eict-computing-image/eict-computing-image.component";
 
 @Component({
   selector: "app-eict-facilities",
-  imports: [PageHeadingComponent, EictImageCrousalComponent],
+  imports: [
+    PageHeadingComponent,
+    EictImageCrousalComponent,
+    EictFacilitiesComputingLabComponent,
+    EictComputingImageComponent,
+  ],
   templateUrl: "./eict-facilities.component.html",
   styleUrl: "./eict-facilities.component.css",
 })

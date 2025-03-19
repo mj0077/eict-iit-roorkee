@@ -63,7 +63,7 @@
 
 /* Text styling */
 .text {
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: 14px;
 }
 .lab-list {
@@ -101,20 +101,26 @@
   justify-content: center;
   background-color: white;
   padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .leftSection,
 .rightSection {
   flex: 1;
-  height: 100%;
+  height: auto;
+  max-width: 648px;
+  width: 100%;
 }
 
 .leftSection {
-  width: 100%;
+  width: 50%;
   max-width: 634px;
-  height: 413px;
 }
 .leftSection h1 {
+  color: #2f327d;
+}
+.rightSection h1 {
   color: #2f327d;
 }
 .underline {
@@ -138,18 +144,18 @@
 .items {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 12px;
   max-width: 700px;
-  margin: auto;
+  /* margin: auto; */
   height: 210.66px;
-  padding-top: 34px;
+  padding-top: 61px;
 }
 
 .item {
   display: flex;
   align-items: center;
   background: #fff;
-  padding: 10px;
+  /* padding: 10px; */
   /* border-radius: 25px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
 }
@@ -170,11 +176,11 @@
   height: 80px;
 }
 
-.text2 {
+/* .text2 {
   font-size: 16px;
   color: #333;
   font-weight: 500;
-}
+} */
 
 /* .rightSection {
 } */
@@ -184,11 +190,57 @@
   .lab-list {
     grid-template-columns: repeat(3, 1fr); /* 3 columns for tablets */
   }
+  .sectionClassRoom-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .leftSection,
+  .rightSection {
+    width: 100%;
+    max-width: 100%;
+    min-width: unset;
+  }
+
+  .items {
+    grid-template-columns: 1fr; /* Single column for items */
+    gap: 15px;
+  }
+
+  .icon2 img {
+    width: 40px;
+    height: 40px;
+  }
+  .lab-info {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media (max-width: 768px) {
   .lab-list {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .classContent p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .classContent p {
+    font-size: 14px;
+  }
+
+  .info-item {
+    min-width: 100%;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .icon img {
+    width: 25px;
+    height: 25px;
   }
 }
 
@@ -196,4 +248,98 @@
   .lab-list {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+.rightSection {
+  margin: 0 auto;
+}
+
+.smartClass {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.classContent p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.lab-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 53px;
+  flex-wrap: wrap;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+}
+
+.icon3 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.icon3 img {
+  width: 80px;
+  height: 80px;
+}
+
+.info-text {
+  font-size: 14px;
+  color: #333;
+}
+.learn-more-btn {
+  background: #ffffff;
+  color: #183a83;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  background: none;
+
+  /* Dimensions from Figma */
+  width: 200px;
+  height: 64px;
+
+  padding: 16px 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.learn-more-btn .arrow {
+  font-size: 18px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.learn-more-btn:hover {
+  background: #183a83;
+  color: white;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.learn-more-btn:hover .arrow {
+  transform: translateX(5px); /* Moves arrow slightly to the right on hover */
+}
+
+.section4 {
+  max-height: 477px;
+  height: 100%;
 }
