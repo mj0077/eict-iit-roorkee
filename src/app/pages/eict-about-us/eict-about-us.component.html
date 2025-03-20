@@ -1,6 +1,103 @@
 <div class="subcontainer">
   <app-page-heading
-    [value]="'Electronics ICT Academy, IIT Roorkee'"
+    [value]="'Electronics & ICT Academy, IIT Roorkee'"
     [backgroundImage]="'/assets/images/about-usBackground.png'"
   ></app-page-heading>
+</div>
+<div class="container">
+  <div class="sectionClassRoom-container section4">
+    <div class="leftSection">
+      <app-eict-computing-image
+        [image]="'assets/images/abtus1.png'"
+      ></app-eict-computing-image>
+    </div>
+    <div class="rightSection">
+      <div class="smartClass">
+        <h1><span class="underline">EICT</span> Academy IIT Roorkee</h1>
+        <div class="classContent">
+          <p>
+            India is fast emerging as a world power in Information,
+            Communication Technology, and Electronics (ICTE) sector. To
+            complement its growth and further development, there is an
+            ever-increasing need for trained professionals with specialization
+            in this space. This includes training of professionals not only in
+            existing and advanced technologies but also in the fields of
+            electronic manufacturing. To meet this objective MeitY has approved
+            a scheme and set up Electronics and ICT (E&ICT) Academy at IIT
+            Roorkee and other IITs/ NITs.
+          </p>
+          <div class="button">
+            <button class="learn-more-btn" (click)="navigate()">
+              Learn More <span class="arrow">→</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="sectionClassRoom-container section4">
+    <div class="leftSection">
+      <div class="smartClass">
+        <h1><span class="underline">IIT</span> Roorkee</h1>
+        <div class="classContent">
+          <p>
+            Indian Institute of Technology – Roorkee is among the foremost of
+            institutes of national importance in higher technological education
+            and in engineering, basic and applied research. Since its
+            establishment, the Institute has played a vital role in providing
+            the technical manpower and know-how to the country and in pursuit of
+            research. The Institute ranks amongst the best technological
+            institutions in the world and has contributed to all sectors of
+            technological development. It has also been considered a
+            trend-setter in the area of education and research in the field of
+            science, technology, and engineering.
+          </p>
+          <div class="button">
+            <button class="learn-more-btn" (click)="navigate()">
+              Learn More <span class="arrow">→</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rightSection">
+      <app-eict-computing-image
+        [image]="'assets/images/abtus2.png'"
+      ></app-eict-computing-image>
+    </div>
+  </div>
+</div>
+
+<div class="section2">
+  <div class="container">
+    <div class="innerHeading">
+      <h1>States</h1>
+    </div>
+    <div class="section2-p">
+      <p>
+        Electronics and ICT Academy, IIT Roorkee is covering 200+ Engineering
+        colleges/Technical Institutes/Polytechnic colleges in the following
+        states:
+      </p>
+    </div>
+
+    <div class="state-grid">
+      <div class="state-card">
+        <img src="assets/images/uttrakhand.png" alt="Uttarakhand" />
+        <!-- <div class="state-name">UTTARAKHAND</div> -->
+      </div>
+      <div class="state-card">
+        <img src="assets/images/hp.png" alt="Himachal Pradesh" />
+      </div>
+      <div class="state-card">
+        <img src="assets/images/jk.png" alt="Jammu & Kashmir" />
+      </div>
+      <div class="state-card">
+        <img src="assets/images/hr.png" alt="Haryana" />
+      </div>
+    </div>
+  </div>
 </div>
