@@ -1,0 +1,71 @@
+<div class="subcontainer">
+  <app-page-heading
+    [value]="'Electronics ICT Academy, IIT Roorkee'"
+    [backgroundImage]="'/assets/images/bgAbout1.png'"
+  ></app-page-heading>
+</div>
+<div class="container">
+  <div class="sectionClassRoom-container section4">
+    <div class="leftSection">
+      <div class="smartClass">
+        <div class="classContent">
+          <p>
+            <strong>Electronics & ICT Academy IIT Roorkee (E&ICT IITR)</strong>
+            is an initiative supported by MeitY, Govt of India to deliver short
+            courses/FDPs/certificate courses in online as well as offline mode.
+            Our courses lay emphasis on bridging the gap between industry demand
+            and academic approach to learning and provide a foundation to build
+            your career in the industries related to the ICT sector. All our
+            courses have projects with real-life problems to give industry
+            insights into learning. We have assimilated academic as well as
+            industry experts to formulate the most effective courses that help
+            professionals/students/faculty to upgrade their knowledge without
+            disrupting their regular schedule. So far, we have conducted 200+
+            courses and trained over 15,000 beneficiaries. The Courses are
+            conducted by well-known industry partners, resource persons from
+            leading academia, and experts from renowned R&D organisations. For
+            this, the Academy has signed MoU’s with Industry/R&D partners in
+            different domains, who collaborate and work with us in conducting
+            the training programs.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="rightSection">
+      <app-eict-computing-image
+        [image]="'assets/images/eict-group.png'"
+      ></app-eict-computing-image>
+    </div>
+  </div>
+
+  <div class="section2">
+    <div class="heading">
+      <h1>Activities of the Academy</h1>
+      <div class="headingLine"></div>
+    </div>
+    <div class="section2Cards">
+      <div class="card" *ngFor="let card of cards">
+        <img [src]="card.image" alt="Course Image" class="card-image" />
+        <div class="card-content">
+          <p>{{ card.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section3">
+    <img src="/assets/images/abtusBgsection2.png" alt="" />
+  </div>
+
+  <div class="section2">
+    <div class="heading">
+      <h1>Features of the Academy</h1>
+      <div class="headingLine"></div>
+    </div>
+    <div class="section3Cards">
+      <div *ngFor="let card of card" class="cardtwo">
+        <p>{{ card.text }}</p>
+      </div>
+    </div>
+  </div>
+</div>

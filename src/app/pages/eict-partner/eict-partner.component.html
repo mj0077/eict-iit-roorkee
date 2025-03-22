@@ -1,0 +1,18 @@
+<div class="subcontainer">
+  <app-page-heading
+    [value]="'Activity/Nodal Centres'"
+    [backgroundImage]="'assets/images/partnerBG.png'"
+  ></app-page-heading>
+</div>
+<div class="container">
+  <div class="partners-container">
+    <div class="partner-card" *ngFor="let partner of partners">
+      <div class="partner-content">
+        <img [src]="partner.logo" [alt]="partner.name" class="partner-logo" />
+        <hr class="divider" />
+        <h3 class="partner-name">{{ partner.name }}</h3>
+        <hr class="divider" />
+      </div>
+    </div>
+  </div>
+</div>
