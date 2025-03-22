@@ -1,3 +1,39 @@
 <div class="subcontainer">
   <app-hero></app-hero>
+  
+  <div class="statistics-container">
+    <!-- Statistics Section -->
+    <div class="statistics-row">
+      <div class="stat-card">
+        @for (stat of statistics; track stat) {
+        <div class="stat-icon" [class]="stat.icon"></div>
+        <div class="stat-content">
+          <div class="stat-title">{{stat.title}}</div>
+          <div class="stat-subtitle" *ngIf="stat.subtitle">{{stat.subtitle}}</div>
+        </div>
+        }
+      </div>
+    </div>
+  
+    <!-- Notice Board Section -->
+    <div class="notice-section">
+      <h2 class="notice-heading">Stay Updated with our <span class="underline">Notice Board</span></h2>
+      
+      <div class="notice-board">
+        <div class="notice-header">Notice Board</div>
+        
+        <div class="notices">
+          <div class="notice" *ngFor="let notice of notices">
+            <h3 class="notice-title">{{notice.title}}</h3>
+            <p class="notice-content">{{notice.content}}</p>
+            <div class="notice-date">Posted: {{notice.date}}</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="view-all-container">
+        <button class="view-all-btn">VIEW ALL</button>
+      </div>
+    </div>
+  </div>
 </div>
